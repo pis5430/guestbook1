@@ -40,6 +40,12 @@ values (seq_guest_no.nextval, '이정재', '1234' ,'안녕' , sysdate );
 
 -- 기본자료 생성완료  
 
+select no,
+       name,
+       password,
+       content,
+       reg_date
+from guestbook;
 
 --등록화면
 --비밀번호 확인
@@ -47,8 +53,6 @@ values (seq_guest_no.nextval, '이정재', '1234' ,'안녕' , sysdate );
 --등록 add.jsp
 --삭제폼 deleteForm.jsp
 --삭제 delete.jsp
-
-
 
 commit;
 rollback;

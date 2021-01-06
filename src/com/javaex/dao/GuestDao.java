@@ -95,7 +95,7 @@ public class GuestDao {
 			query += "        reg_date ";
 			query += " from guestbook ";
 			
-			//System.out.println(query);
+			System.out.println(query);
 			
 			pstmt = conn.prepareStatement(query);
 			rs = pstmt.executeQuery();
