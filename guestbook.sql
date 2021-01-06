@@ -10,7 +10,7 @@ drop sequence seq_guest_no;
 --guestbook 테이블 만들기
 create table guestbook (
     no number,
-    name varchar2(80),
+    name varchar2(80) not null,
     password varchar2(20),
     content varchar2(2000),
     reg_date date,
